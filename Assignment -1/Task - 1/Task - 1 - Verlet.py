@@ -19,7 +19,7 @@ t_array = np.arange(0, t_max, dt)
 x_list = []
 v_list = []
 
-# Euler integration
+# Verlet integration
 for t in t_array:
 
     # append current state to trajectories

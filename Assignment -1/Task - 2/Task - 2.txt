@@ -1,0 +1,7 @@
+I made an interactive graph whose dt can be changed based on sliders so that the comparison can be more obvious.
+
+The instruction asked to set t_max to 1000 but this will make the graph filled with lines so t_max is set to 100.
+(no influence because 100 is enough to see whether the integration diverges or not)
+
+From the graph, Euler method never converges. It turns to be more accurate as dt decreases.
+From the graph, Verlet method is stable under a specific dt which is between 1 and 2.

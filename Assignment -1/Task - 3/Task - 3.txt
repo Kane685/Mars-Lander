@@ -1,0 +1,1 @@
+By trial and error, the critical value for Verlet method to be unstable is approximately 1.3.
