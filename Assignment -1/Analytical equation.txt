@@ -1,0 +1,20 @@
+For a mass-spring system:
+
+    a = F/m = -k*x/m = x''
+
+so we have:
+
+    x'' + k*x/m = 0
+
+Assume x= A*(e**(n*t)):
+    
+    we can get n should be i or -i
+
+so x = A*cos(t) + B* sin(t)
+
+at t = 0, x = 0 and v = 1
+
+so that we can get x = sin(t) and v = cos(t)
+
+this satisfies the figures got from programs (is the precision of dt is high enough)
+
