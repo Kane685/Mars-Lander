@@ -10,6 +10,13 @@ from matplotlib.widgets import Slider
 #---------------------------------------------------------------------------------------------------------------------------------
 # define Euler integration
 def Integration_E(m_E,k_E,dt_E,x_E,v_E,t):
+    # m is mass
+    # k is stiffness of spring
+    # dt is time division
+    # x is displacement
+    # v is velocity
+    # t is maximum time
+
     m = m_E
     k = k_E
     dt = dt_E
@@ -42,6 +49,13 @@ def Integration_E(m_E,k_E,dt_E,x_E,v_E,t):
 #---------------------------------------------------------------------------------------------------------------------------------
 # define Verlet integration
 def Integration_V(m_V,k_V,dt_V,x_V,v_V,t):
+    # m is mass
+    # k is stiffness of spring
+    # dt is time division
+    # x is displacement
+    # v is velocity
+    # t is maximum time
+    
     m = m_V
     k = k_V
     dt = dt_V
@@ -120,13 +134,7 @@ slider_V = Slider(ax_slider_V, 'Verlet', 0.001, 10.0, valinit=dt_V)
 def update(val):
     # Generate initial data
     # mass, spring constant, initial position and velocity,simulation time, timestep and time
-    m = 1
-    k = 1
-    x_E = 0
-    v_E = 1
-    x_V = 0
-    v_V = 1
-    t_max = 100
+    global m,k,x_E,x_V,v_E,v_V,t_max
     dt_E = slider_E.val  # Get the dt from the first slider
     dt_V = slider_V.val  # Get the dt from the second slider
     Euler.set_xdata(Integration_E(m,k,dt_E,x_E,v_E,t_max)[2])  # Update t_Euler

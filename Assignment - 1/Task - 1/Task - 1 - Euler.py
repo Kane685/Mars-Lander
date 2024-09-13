@@ -17,7 +17,6 @@ t_array = np.arange(0, t_max, dt)
 # initialise empty lists to record trajectories
 x_list = []
 v_list = []
-
 # Euler integration
 for t in t_array:
 

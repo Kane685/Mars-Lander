@@ -1,0 +1,29 @@
+This program is similar to previous assignment. The largest different is 3-dimensional data should be concerned though the graph drawn is 
+2-dimensional. If there is only gravitational force acting on the satellite, the movement should always be in a plane or in a line.
+
+The integration methods are same as previous assignments but data is stored using Numpy arrays.
+
+Two text-boxes are added so that initial velocity and height above Mars can be set by yourself. In this way, different trajectories can be 
+compared in a more obvious way. The calculation is more intensive in this program so slider is not used as input tool otherwise the program 
+will be super slow.
+
+Theoretical calculation：
+    G : gravitational constant
+    M : mass of Mars
+    m : mass of satellite
+    r : radius of Mars
+    h : height above surface of Mars
+    v : velocity of satellite
+
+    gravitational force = G * M * m / (( r + h) ** 2)
+    force required to do circular motion : m* (v ** 2) / (r + h)
+    when the satellite does circular motion, gravitational force = force required to do circular motion
+    so G * M * m / (( r + h) ** 2) = m* (v ** 2) / (r + h) 
+    ==> orbital velocity = sqrt((G * M ) / (r + h) )
+
+    gravitation energy = - G * M * m / ( r + h) 
+    kinetic energy = m * (v ** 2) / 2
+    to overcome gravitational field, gravitation energy <  kinetic energy
+    so m * (v ** 2) / 2 > G * M * m / ( r + h)
+    ==> v > sqrt(（2 * G * M ) / (r + h) ）
+    so escape velocity  = sqrt(（2 * G * M ) / (r + h) ）
