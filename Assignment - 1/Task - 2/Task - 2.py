@@ -74,14 +74,14 @@ def Integration_V(m_V,k_V,dt_V,x_V,v_V,t):
         v_list.append(v)
 
         # calculate new position and velocity
-        # x_p is previous placement
-        # x_c is current placement
-        a = - k * x / m
-        x_c = x
-        x_p = x - dt * v
-        x = 2 * x - x_p + (dt ** 2) * a
-        x_p = x
-        v = (x - x_c) / dt
+        if t == 0:
+            a = - k * x / m
+            x = x + dt * v + (dt ** 2) * a
+            v = (x - x_list[-1]) / dt
+        else:
+            a = - k * x / m
+            x = 2 * x - x_list[-2]+ (dt ** 2) * a
+            v = (x - x_list[-1]) / dt
 
     # convert trajectory lists into arrays, so they can be sliced (useful for Assignment 2)
     x_array = np.array(x_list)

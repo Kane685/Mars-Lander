@@ -1,0 +1,81 @@
+Conditions of my laptop:
+    CPU : Intel Core i9-13980HX
+    GPU : NVIDIA GeForce RTX 4080 Laptop
+    RAM : 32G
+
+Execution time of Euler method using python in VScode:
+    Execution time - Euler: 0.00017419999494450167 second when dt is : 0.1
+    Execution time - Euler: 0.0015376000010292046 second when dt is : 0.01
+    Execution time - Euler: 0.015163000003667548 second when dt is : 0.001
+    Execution time - Euler: 0.15903580000303918 second when dt is : 0.0001
+    Execution time - Euler: 1.6048922999980277 second when dt is : 1e-05
+
+Execution time of Euler method using python in Colaboratory:
+    Execution time - Euler: 0.0009434639999881256 second when dt is : 0.1
+    Execution time - Euler: 0.006379843999980039 second when dt is : 0.01
+    Execution time - Euler: 0.04826062400002229 second when dt is : 0.001
+    Execution time - Euler: 0.5131063359999644 second when dt is : 0.0001
+    Execution time - Euler: 5.021930841000028 second when dt is : 1e-05
+
+Execution time of Euler method using c++ compilation in VScode:
+    Execution time - Euler: 5.34e-05 second when dt is :0.1
+    Execution time - Euler: 0.0004333 second when dt is :0.01
+    Execution time - Euler: 0.0030722 second when dt is :0.001
+    Execution time - Euler: 0.0184448 second when dt is :0.0001
+    Execution time - Euler: 0.213129 second when dt is :1e-05
+
+Execution time of Euler method using standard c++ compilation in Visual Studio:
+    Execution time - Euler: 0.0001617 second when dt is :0.1
+    Execution time - Euler: 0.0011662 second when dt is :0.01
+    Execution time - Euler: 0.0120281 second when dt is :0.001
+    Execution time - Euler: 0.1146 second when dt is :0.0001
+    Execution time - Euler: 1.16939 second when dt is :1e-05
+
+Execution time of Euler method using optimized c++ compilation in Visual Studio:
+    Execution time - Euler: 3.48e-05 second when dt is :0.1
+    Execution time - Euler: 0.0001836 second when dt is :0.01
+    Execution time - Euler: 0.0019779 second when dt is :0.001
+    Execution time - Euler: 0.0133044 second when dt is :0.0001
+    Execution time - Euler: 0.152166 second when dt is :1e-05
+
+Execution time of Verlet method using python in VScode:
+    Execution time - Verlet: 0.0002705000006244518 second when dt is : 0.1
+    Execution time - Verlet: 0.0025033000056282617 second when dt is : 0.01
+    Execution time - Verlet: 0.02494719999958761 second when dt is : 0.001
+    Execution time - Verlet: 0.26175480000529205 second when dt is : 0.0001
+    Execution time - Verlet: 2.6723726999989594 second when dt is : 1e-05
+
+Execution time of Verlet method using python in Colaboratory:
+    Execution time - Verlet: 0.0008974539999826447 second when dt is : 0.1
+    Execution time - Verlet: 0.010024498000007043 second when dt is : 0.01
+    Execution time - Verlet: 0.0771113870000022 second when dt is : 0.001
+    Execution time - Verlet: 0.776191047999987 second when dt is : 0.0001
+    Execution time - Verlet: 8.560163295999985 second when dt is : 1e-05
+
+Execution time of Verlet method using c++ compilation in VScode:
+    Execution time - Verlet: 6.28e-05 second when dt is :0.1
+    Execution time - Verlet: 0.0005611 second when dt is :0.01
+    Execution time - Verlet: 0.0035487 second when dt is :0.001
+    Execution time - Verlet: 0.0204568 second when dt is :0.0001
+    Execution time - Verlet: 0.211519 second when dt is :1e-05
+
+Execution time of Verlet method using standard c++ compilation in Visual Studio:
+    Execution time - Verlet: 0.0002263 second when dt is :0.1
+    Execution time - Verlet: 0.0017064 second when dt is :0.01
+    Execution time - Verlet: 0.0133472 second when dt is :0.001
+    Execution time - Verlet: 0.1196 second when dt is :0.0001
+    Execution time - Verlet: 1.2864 second when dt is :1e-05
+
+Execution time of Verlet method using optimized c++ compilation in Visual Studio:
+    Execution time - Verlet: 3.36e-05 second when dt is :0.1
+    Execution time - Verlet: 0.000134 second when dt is :0.01
+    Execution time - Verlet: 0.0017102 second when dt is :0.001
+    Execution time - Verlet: 0.013295 second when dt is :0.0001
+    Execution time - Verlet: 0.156897 second when dt is :1e-05
+
+Based on these data:
+    I found that Euler method is generally faster than Verlet method.
+    Python in Local VScode is faster than Python in remote Colaboratory.
+    C++ is faster than Python.
+    Optimized c++ in Visual Studio is faster than standard C++ in Visual Studio.
+    c++ in Vscode is faster than standard C++ in Visual Studio but slower than optimized c++ in Visual Studio.
