@@ -69,6 +69,7 @@ def Integration_V(m_V,k_V,dt_V,x_V,v_V,t):
     # Verlet integration
     for t in t_array:
 
+
         # append current state to trajectories
         x_list.append(x)
         v_list.append(v)
